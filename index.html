@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Free Data Offer – Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h1>🎁 Free 50GB Data</h1>
+    <p class="subtitle">Eligibility Check (Demo UI)</p>
+
+    <input type="tel" placeholder="Enter phone number" id="phone">
+
+    <button onclick="checkDemo()">Check Now</button>
+
+    <div class="result" id="result"></div>
+
+    <div class="warning">
+      ⚠ Check if this offer is eligible to you.
+    </div>
+  </div>
+</div>
+
+<script>
+function checkDemo() {
+  document.getElementById("result").innerText =
+    "Sorry, You is not eligible to use this data";
+}
+</script>
+
+</body>
+</html>
